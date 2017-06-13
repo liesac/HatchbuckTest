@@ -1,0 +1,26 @@
+<h1>User Detail</h1>
+
+<div class="col-sm-12">
+    <address>
+        <strong>Name: </strong>{{name}} - <strong title="{{company.catchPhrase}}">{{company.name}}</strong><br>
+        {{#if address.street}}
+            {{address.street}} {{#if address.suite}}, {{address.suite}}{{/if}}
+        {{/if}}<br>
+        {{#if address.city}}
+            {{address.city}} {{#if address.zipcode}}, {{address.zipcode}}{{/if}}
+        {{/if}}<br>
+        <strong>User Name</strong>: {{username}}<br>
+        <strong>Phone: </strong>{{phone}}<br>
+        <strong>e-Mail: </strong><a href="mailto:{{email}}">{{email}}</a><br>
+        <strong>Web Site: </strong><a href="http://{{website}}">{{website}}</a><br>
+        <strong>Company description: </strong>{{company.bs}}.
+    </address>
+</div>
+<div class="col-sm-6">
+    <div class="btn-group" role="group">
+        <button data-action="Return" type="button" class="btn btn-default">Return</button>
+        <button data-action="Delete" type="button" class="btn btn-danger">Delete User</button>
+        <button data-action="Edit" type="button" class="btn btn-success">Edit User</button>
+        <button data-action="Create" type="button" class="btn btn-info">Crete User</button>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<main>
+    <h1>Users List</h1>
+    <div class="col-sm-4">
+        <div class="list-group">
+            <button type="button" class="list-group-item" *ngFor="let user of users"> <span class="badge view-detail-user" (click)="showUserDetail(user.id)">View Detail</span>{{user.name}}</button>
+        </div>
+    </div>
+</main>

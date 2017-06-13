@@ -1,0 +1,80 @@
+<form id="userInfoForm">
+    <h4 class="text-uppercase">Basic Info</h4>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserName">Name</label>
+            <input type="text" class="form-control" id="editUserName" placeholder="Name and last name" value="{{name}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserUserName">User Name</label>
+            <input type="text" class="form-control" id="editUserUserName" placeholder="User name" value="{{username}}" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserEmail">Email address</label>
+            <input type="text" class="form-control" id="editUserEmail" placeholder="Email" value="{{email}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserPhone">Phone number</label>
+            <input type="text" class="form-control" id="editUserPhone" placeholder="Phone number" value="{{phone}}" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserWeb">Web site URL</label>
+            <input type="text" class="form-control" id="editUserWeb" placeholder="Web site" value="{{website}}" required>
+        </div>
+    </div>
+    <h4 class="text-uppercase">Address</h4>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserStreet">Street</label>
+            <input type="text" class="form-control" id="editUserStreet" placeholder="Street" value="{{address.street}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserSuite">Suite</label>
+            <input type="text" class="form-control" id="editUserSuite" placeholder="Suite" value="{{address.suite}}" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserCity">City</label>
+            <input type="text" class="form-control" id="editUserCity" placeholder="City" value="{{address.city}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserZipCode">Zip code</label>
+            <input type="text" class="form-control" id="editUserZipCode" placeholder="Zip code" value="{{address.zipcode}}" required>
+        </div>
+    </div>
+    <h4 class="text-uppercase">Geolocation</h4>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserLatitude">Latitude</label>
+            <input type="text" class="form-control" id="editUserLatitude" placeholder="Latitude" value="{{address.geo.lat}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserLongitude">Longitude</label>
+            <input type="text" class="form-control" id="editUserLongitude" placeholder="Longitude" value="{{address.geo.lng}}" required>
+        </div>
+    </div>
+    <h4 class="text-uppercase">Company</h4>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserCompanyName">Name</label>
+            <input type="text" class="form-control" id="editUserCompanyName" placeholder="Name" value="{{company.name}}" required>
+        </div>
+        <div class="col-sm-6">
+            <label for="editUserCatchPhrase">Catch phrase</label>
+            <input type="text" class="form-control" id="editUserCatchPhrase" placeholder="Catch phrase" value="{{company.catchPhrase}}" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="editUserBs">Bs</label>
+            <input type="text" class="form-control" id="editUserBs" placeholder="bs" value="{{company.bs}}" required>
+        </div>
+    </div>
+    <button class="btn btn-success" id="submitUserForm" data-action="{{#if name}}update{{else}}create{{/if}}">{{#if name}}Update{{else}}Create{{/if}}</button>
+    <button class="btn btn-danger" type="button" id="cancelUserForm">Cancel</button>
+</form>

@@ -1,0 +1,10 @@
+body {
+    background: #FEB858;
+    color: #0147A7;
+}
+
+#userContainer{
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
